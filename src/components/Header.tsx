@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,32 +45,36 @@ const Header = () => {
         >
           Home
         </Link>
-        <Link 
-          to="/packages" 
+        <HashLink 
+          to="/#services" 
+          smooth
           className="nav-link text-black md:text-sm lg:text-xl hover:text-purple-400 transition-colors py-4"
         >
           Services
-        </Link>
-        <Link 
-          to="/quote" 
+        </HashLink>
+        <HashLink
+          to="/#why-us" 
+          smooth
           className="nav-link text-black md:text-sm lg:text-xl hover:text-purple-400 transition-colors py-4"
         >
           Why us
-        </Link>
-        <Link 
-          to="/client" 
+        </HashLink>
+        <HashLink
+          to="/#tech" 
+          smooth
           className="nav-link text-black md:text-sm lg:text-xl hover:text-purple-400 transition-colors py-4"
         >
           Tech
-        </Link>
-        <Link 
-          to="/admin" 
+        </HashLink>
+        <HashLink
+          to="/#testimonials" 
+          smooth
           className="nav-link text-black md:text-sm lg:text-xl hover:text-purple-400 transition-colors py-4"
         >
           Testimonials
-        </Link>
+        </HashLink>
         <Link 
-          to="/quote" 
+          to="/#contact" 
           className="nav-link text-black md:text-sm lg:text-xl hover:text-purple-400 transition-colors py-4"
         >
           Contact

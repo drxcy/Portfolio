@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import ServicesSection from "../components/Service";
 import WhyChooseUs from "../components/Why-Choose-us";
 import TechStack from "../components/TechStack";
+import { HashLink } from 'react-router-hash-link';
 
 const Index = () => {
   return (
@@ -21,14 +22,14 @@ const Index = () => {
 
       <section className="container mx-auto px-6">
         <Hero />
-      </section>
-      <section className="bg-gray-100 py-16 container mx-auto px-6">
+      </section >
+      <section id="services" className="bg-gray-100 py-16 container mx-auto px-6">
         <ServicesSection/>
       </section>
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-6 py-16" id="why-us">
         <WhyChooseUs />
         </section>
-        <section className="container mx-auto px-6 py-16">
+        <section className="container mx-auto px-6 py-16" id="tech">
     <TechStack />
         </section>
 
